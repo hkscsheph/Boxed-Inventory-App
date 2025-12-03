@@ -37,6 +37,7 @@ export default function RegisterPage() {
 
     if (authError) {
       setError(authError.message);
+      console.log({authError})
     } else {
       router.push("/dashboard");
     }
